@@ -216,7 +216,7 @@ def prepare_rhs(C, f, mass, delta_t, T_intervall, M, OMEGA):
             if t not in RHS_values:
                 RHS = calculate_RHS(f,mesh,M,OMEGA,t)
                 RHS_values[t] = solve(mass, RHS)
-    return RHS_value
+    return RHS_values
 
 
 # This function evaluates on step of CP or FP, depending on the inputs R, P and C that you give.
