@@ -1,52 +1,51 @@
 # Parareal-OCP-Convergence-tests-bachelor-thesis
 
-This repository contains the code, used to produce the numerical results presented in the Bachelor thesis.
+This repository contains the code, used to produce the numerical results presented in the bachelor's thesis.
 
 1. OCP_algorithm.ipynb:
 
 This notebook contains the OCP algorithm, presented in section 3.
   
 2. Parareal_algorithm.ipynb:
-This notebook only contains the parareal algorithm itself, without computing the error to the fine solution at every      iteration. It also contains a legend of the inputs that the parareal algorithm uses/ a list of all precompued values.
+This notebook only contains the parareal algorithm itself, without computing the error to the fine solution at every      iteration. It also contains a legend of the inputs that the parareal algorithm uses/ a list of all precomputed values.
   
 3. parareal_grundfunktionen.py:
-
-This file contains all auxillary functions that are needed to make the parareal algorithm, and all the tests run.
+This file contains all auxiliary functions that are needed to make the parareal algorithm, and all the tests run.
 more detailed information on the defined functions are given in file itself or the notebook of the same name.
 Included are FEM in 1D, propagators, functions that compute the propagator sequentially, error functions for verification,
 and functions for precalculation for the parareal algorithm
   
-6. Tables_in_section_5.ipynb:
+4. Tables_in_section_5.ipynb:
 This notebook contains the calculation of the values, presented in the two tables at the end of section 5.
   
-7. propagators.py:
+5. propagators.py:
 This file contains all common FPs and CPs that have been used throughout this work, together with a dictionary entry at
-the end to easy call them in other notebooks
+the end to easily call them in other notebooks
 
-8. Examples_from_section5.ipynb:
+6. Examples_from_section5.ipynb:
 This notebook contains 3 example plots, which are all part of the numerical experiments in Section 5.
 
-9. Additional_plots_section_4and5:
+7. Additional_plots_section_4and5:
 This notebook contains the rest of the plots that have been shown throughout section 3,4 and 5. Together with
 Examples_from_section5-ipynb, every plot that has been shown in the thesis can be recreated.
 
-10. modules:
-modules contains additional .pt files, which contain the prarameters for the stability functions that were used to create
+8. modules:
+modules contains additional .pt files, which contain the parameters for the stability functions that were used to create
 the plots in sections 3,4 and 5. The OCP algorithm saves them at the end to avoid additional round off errors. Also due
 to this, one should be able to run the experiments without the need of optimizing the coarse propagator again. The files
 mostly follow the same naming convention: for example: "n1m2_001_100_LOBATTOIIIC4_J20.pt"
 
    - n1m2 is for the degrees of numerator and denominator of the stability function
-   - 001_100 is for the set it has beeon optimized on, most of it are
-     either on of two: "001_100" for [0.01,100] or "exact_eig" for the explicit eigenvalues of the discrete operators
-     LOBATTOIIIC4 is for the FP it has been trained for, following the names from propagators.py, the number at the end
+   - 001_100 is for the set it has been optimized on, most of it are
+     either one of two: "001_100" for [0.01,100] or "exact_eig" for the explicit eigenvalues of the discrete operators
+     LOBATTOIIIC4 is for the FP it has been optimized for, following the names from propagators.py, the number at the end
      regards the stage
-   -  J is the ration it has been trained for
-   -  some have a_100 at the end, this was done for Example 5.3, to make further distinctions, if the OCPs were trained
+   -  J is the ratio it has been optimized for
+   -  some have a_100 at the end, this was done for Example 5.3, to make further distinctions, if the OCPs were optimized
       on the exact eigenvalues for this example
      
      
-11. Use of AI/ code from other sources:
+9. Use of AI/ code from other sources:
 The implementation in "OCP_algorithm.ipynb" is largely based on and adapted
 from the GitHub repository accompanying the original paper on the OCP algorithm.
 The implementation was modified for this thesis, in particular to allow different
