@@ -43,9 +43,11 @@ mostly follow the same naming convention: for example: "n1m2_001_100_LOBATTOIIIC
    -  J is the ratio it has been optimized for
    -  some have a_100 at the end, this was done for Example 5.3, to make further distinctions, if the OCPs were optimized
       on the exact eigenvalues for this example
+
+9. polynomials_proof_of_Prop_4_8.ipynb:
+This contains the Sympy step in the proof of Proposition 4.8, as well as a few more calculations, that were used in the reasoning there.
      
-     
-9. Use of AI/ code from other sources:
+11. Use of AI/ code from other sources:
 The implementation in "OCP_algorithm.ipynb" is largely based on and adapted
 from the GitHub repository accompanying the original paper on the OCP algorithm.
 The implementation was modified for this thesis, in particular to allow different
